@@ -1,0 +1,19 @@
+<div
+  v-if="available"
+>
+  <vtk-image-data :dataset="source.getDataset()" class="black"/>
+  <vtk-molecule :dataset="source.getDataset()" />
+  <vtk-poly-data :dataset="source.getDataset()"  />
+  <vtk-field-data
+  class="black"
+    :dataset="source.getDataset()"
+    name="Point Data"
+    type="PointData"
+  />
+  <vtk-field-data
+  class="black"
+    :dataset="source.getDataset()"
+    name="Cell Data"
+    type="CellData"
+  />
+</div>
