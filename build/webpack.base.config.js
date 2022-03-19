@@ -19,6 +19,7 @@ const paths = {
 };
 
 module.exports = {
+  cache: false,
   entry: Object.assign({
     glance: paths.entry,
   }, externals.getExternalEntries(paths.externals)),
@@ -157,7 +158,7 @@ module.exports = {
         vendors: {
           test: /[\\/]node_modules[\\/]/,
           name: 'vendors',
-          enforce: true,
+          // enforce: true,
           chunks: 'all',
         },
       },

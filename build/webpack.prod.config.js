@@ -41,6 +41,7 @@ function htmlTemplateParameters({ useGA = false } = { useGA: false }) {
 }
 
 module.exports = merge(baseConfig, {
+  cache: false,
   mode: 'production',
   module: {
     rules: [

@@ -17,6 +17,7 @@ const merge = mergeWithRules({
 });
 
 module.exports = merge(baseConfig, {
+  cache:false,
   mode: 'development',
   // devtool: 'inline-cheap-module-source-map',
   module: {
@@ -65,7 +66,7 @@ module.exports = merge(baseConfig, {
     host: HOST || '0.0.0.0',
     port: PORT || 9999,
     allowedHosts: 'all',
-    hot: false,
+    hot: true,
     devMiddleware: {
       stats: {
         colors: true,
